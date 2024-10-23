@@ -87,4 +87,8 @@ outline: none;
   border-radius: 50%;
   cursor: pointer;
   margin-bottom: 20px;
+  transition: transform 0.5s;
+}
+.flip {
+  transform: rotateY(360deg);
 }

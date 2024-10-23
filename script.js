@@ -21,6 +21,7 @@
     function play(){
       if(y>0){
         if(a>0 && a<0.33){
+          document.getElementById('comp-play').src='images/rock.png';
           if(y==1){
             t++;
             document.getElementById('tie').value=`Tie : ${t}`;
@@ -38,6 +39,7 @@
           }
         }
         else if(a>0.33 && a<0.66){
+          document.getElementById('comp-play').src='images/paper.png';
           if(y==1){
             l++;
             document.getElementById('lost').value=`Lost : ${l}`;
@@ -55,6 +57,7 @@
           }
         }
         else if(a>0.66){
+          document.getElementById('comp-play').src='images/scissor.png';
           if(y==1){
             w++;
             document.getElementById('won').value=`Won : ${w}`;
@@ -75,4 +78,10 @@
       else{
         alert('Choose a option to continue')
       }
+    }
+    function flip() {
+      document.getElementById('comp-play').classList.add('flip');
+      setTimeout(() => {
+        document.getElementById('comp-play').classList.remove('flip');
+      }, 500);
     }
