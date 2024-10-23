@@ -4,8 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RPS Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
+  <h1>ROCK PAPER SCISSOR</h1>
+  <main>
+  <button class="btn"
+  onclick="
+  y=1;
+  myfun();
+  ">
+  <img src="images/rock.png" alt="" class="play" id="play1"></button>
   
+  <button class="btn"
+  onclick="
+  y=2;
+  myfun();
+  ">
+  <img src="images/paper.png" alt="" class="play" id="play2"></button>
+  
+  <button class="btn"
+  onclick="
+  y=3;
+  myfun();
+  ">
+  <img src="images/scissor.png" alt="" class="play" id="play3"></button>
+</main>
+<div class="info">
+  <input type="text" value="Let's Play !" id="info" readonly>
+</div>
+<div class="data">
+  <div class="pl">
+    <input type="text" value="Won : 0" id="won" class="play-data" readonly>
+    <input type="text" value="Lost : 0" id="lost" class="play-data" readonly>
+    <input type="text" value="Tie : 0" id="tie" class="play-data" readonly>
+  </div>
+  <div class="comp-data">
+    <button class="btn" onclick="
+      a=Math.random();
+      play();
+      ">
+      <img src="images/rock.png" class="comp-play" alt="">
+    </button>
+    <input type="text" value="Choose your option and" class="play-data" readonly>
+    <input type="text" value="Click to play !" class="play-data" readonly>
+  </div>
+</div>
 </body>
 </html>
