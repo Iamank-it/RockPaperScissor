@@ -25,6 +25,21 @@ img{
   border-radius: 50%;
   cursor: pointer;
 }
+@media (min-width: 850px) and (max-width: 1200px) {
+  img{
+    width: 150px;
+  }
+ }
+  @media (min-width: 500px) and (max-width: 850px) {
+    img{
+      width: 100px;
+    }
+ }
+  @media (max-width: 500px) {
+    img{
+      width: 50px;
+    }
+ }  
 img:hover{
   box-shadow: 0px 0px 20px yellow;
 }
@@ -89,6 +104,24 @@ outline: none;
   margin-bottom: 20px;
   transition: transform 0.5s;
 }
+@media (min-width: 850px) and (max-width: 1200px) {
+  .comp-play{
+    width: 150px;
+  }
+ }
+  @media (min-width: 500px) and (max-width: 850px) {
+    .comp-play{
+      width: 100px;
+    }
+ }
+  @media (max-width: 500px) {
+    .comp-play{
+      width: 50px;
+    }
+    .data{
+      grid-template-columns: 1fr;
+    }
+ }  
 .flip {
   transform: rotateY(360deg);
 }
